@@ -16,7 +16,8 @@ public class OnChangePosition : MonoBehaviour
 
         foreach(var item in allGOS)
         {
-            Physics.IgnoreCollision(item.GetComponent<Collider>(), GeneratedMeshCollider, true);
+            if(item.layer == LayerMask.NameToLayer("Obstacles"))
+                Physics.IgnoreCollision(item.GetComponent<Collider>(), GeneratedMeshCollider, true);
         } 
     }
 

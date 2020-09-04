@@ -1,3 +1,7 @@
 /Library
 /Temp
 /logs
+.vs
+obj
+Assembly-CSharp.csproj
+holeIO.sln
